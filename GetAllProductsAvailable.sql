@@ -1,3 +1,4 @@
+-- Query 2
 SELECT
     p.product_id,
     p.product_name,
