@@ -5,7 +5,7 @@ SELECT
     c.last_name,
     c.email
 FROM
-    sales.customers As c
+    sales.customers c
 LEFT JOIN
-    sales.orders As o ON c.customer_id = o.customer_id
+    sales.orders o ON c.customer_id = o.customer_id
 WHERE o.order_id IS NULL;
